@@ -39,7 +39,7 @@ cat | DOKKU_ROOT="$DOKKU_ROOT" dokku git-hook $APP
 EOF
     chmod +x "$PRERECEIVE_HOOK"
 
-    ps_rebuild "$APP"
+    dokku ps:rebuild "$APP"
   fi
 }
 
